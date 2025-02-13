@@ -27,11 +27,3 @@ def lambda_handler(event, context):
         "headers": {"Content-Type": "application/json"},
         "body": json.dumps({"message": response_data})
     }
-
-# Simulate Lambda execution directly here for testing purposes (no need for main)
-event = {}  # Simulated event (you can populate this with actual test data if needed)
-context = {}  # Context (typically provided by AWS Lambda, can be mocked here if needed)
-
-# Call the lambda_handler directly for testing in VS Code terminal
-result = lambda_handler(event, context)
-print("Lambda Result:", result)  # Print result to terminal
